@@ -36,6 +36,7 @@
     "deploy:prod": "pnpm build && pm2 start pm2.config.js --env prod"
   },
   "dependencies": {
+    "@ant-design/charts": "^2.1.1",
     "@ant-design/icons": "^4.8.2",
     "@ant-design/nextjs-registry": "^1.0.0",
     "@ant-design/pro-chat": "^1.13.6",
