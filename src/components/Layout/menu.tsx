@@ -27,6 +27,11 @@ const getNavList = (t: any) => {
                     label: t('customChart')
                 },
                 {
+                    key: '/dashboard/monoMemoryProfiler',
+                    icon: <FundOutlined/>,
+                    label: t('monoMemoryProfiler')
+                },
+                {
                     key: '/dashboard/monitor',
                     icon: <FundOutlined />,
                     label: t('monitor')

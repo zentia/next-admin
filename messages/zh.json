@@ -1,6 +1,6 @@
 {
     "index": {
-        "title": "Next-Admin",
+        "title": "OSGame-Admin",
         "desc": "一款基于NextJS 14.0+ 和 antd5.0 开发的全栈开箱即用的多页面中后台管理解决方案",
         "log": {
             "title": "Next-Admin 进程规划",
@@ -17,8 +17,9 @@
     },
     "global": {
         "technological exchanges": "技术交流",
-        "dashboard": "数据大盘",
+        "dashboard": "性能分析",
         "customChart": "自定义报表",
+        "monoMemoryProfiler": "mono内存分析",
         "rpa": "可视化流程编排",
         "drawio": "流程图编辑器",
         "monitor": "数据监控",
