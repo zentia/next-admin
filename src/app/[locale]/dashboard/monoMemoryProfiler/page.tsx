@@ -12,13 +12,16 @@ const Heatmap = dynamic(
 )
 
 import boardList from './board';
+import {HeatmapConfig} from "@ant-design/plots/es/components/heatmap";
 
 export default function Dashboard(){
-
-    const config = {
+    const config : HeatmapConfig = {
         height: 300,
         autoFit: false,
-        boardList,
+        data: {
+            type: 'inline',
+            value: boardList,
+        },
         xField: (d: { date: string | number | Date; }) => new Date(d.date).getUTCDate(),
         yField: (d: { date: string | number | Date; }) => new Date(d.date).getUTCMonth(),
         colorField: 'temp_max',
@@ -31,6 +34,15 @@ export default function Dashboard(){
             valueFormatter: '~s',
             pointerEvents: 'none'
         },
+        onEvent:(chart, event)=>{
+            if (event.type === 'pointerup')
+                {
+                    console.log(event.type);
+                }
+            
+            
+        }
+
     };
 
     return (
