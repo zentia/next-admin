@@ -1,3 +1,4 @@
+
 const barData = [
     { name: 'MODIFY', value: 138, washaway: 0.21014492753623193 },
     { name: 'PRERELEASE', value: 109, washaway: 0.5596330275229358 },
@@ -133,6 +134,7 @@ const boardList = [
             ],
         }
     },
+    
     {
         id: '2',
         w: 'calc(58% - 16px)',
